@@ -1,18 +1,13 @@
+/* general settings */
+html, body, #wrapper{height: 100%; width: 100%;}
+ul, li{list-style-type: none; margin: 0; padding: 0;}
+
 /* glyphicons */
 .glyphicon-th{margin-right: 10px;}
 .glyphicon-chevron-right{float: right; margin-top: 11px; right: 10px; color: #3f3f3f;}
 
-
-html, body, #wrapper{height: 100%; width: 100%;}
-ul, li{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#wrapper{
-    padding-left: 250px;
-    transition: all 0.4s ease 0s;
-}
+/* main wrapper */
+#wrapper{padding-left: 250px; transition: all 0.4s ease 0s;}
 
 /* sidebar */
 #sidebar-wrapper{
@@ -27,6 +22,8 @@ ul, li{
      transition: all 0.4s ease 0s;
      display:block;
 }
+
+/* sidebar header */
 #sidebar-wrapper > #sidebar-header{
     width: 100%;
     height: 55px;
@@ -34,7 +31,6 @@ ul, li{
     background-color: #3f3f3f;
     margin-bottom: 10px;
 }
-
 
 #sidebar-wrapper > #sidebar-header > img{
     width: 35px;
@@ -50,6 +46,8 @@ ul, li{
     height: 35px;
     text-transform: capitalize;
 }
+
+/* sidebar menu */
 .mark, .mark:hover{
     color: #3f3f3f;
     text-transform: uppercase;
@@ -61,37 +59,19 @@ ul, li{
     -moz-border-radius: 15px;
     float: left;
 }
-.mark:before{
-    content: "x";
-}
+.mark:before{content: "x";}
 
-/* sidebar menu */
+.link1 a{color: #3f3f3f; float: left;}
+.link1 a:hover{background: none !important;}
 
+h1.menu-title{font-size: 14px; color:  #ccc; margin-left: 15px;}
 
-
-.link1 a{
-    color: #3f3f3f;
-    float: left;
-}
-.link1 a:hover{
-    background: none !important;
-}
-
-h1.menu-title{
-    font-size: 14px;
-    color:  #ccc;
-    margin-left: 15px;
-}
-
-#manage-modules{
-    bottom: 0;
-    position: fixed;
-    width: 250px;
-    border-top: 2px solid #ccc;
-}
+/* sidebar > manage modules link at bottom */
+#manage-modules{bottom: 0; position: fixed; width: 250px; border-top: 2px solid #ccc;}
 
 #manage-modules > ul > li > a{color: #ccc; margin-left: 30px;}
 #manage-modules > ul > li > a:hover{background: none !important; color: #fff;}
+
 /* main area */
 #content-wrapper{
     width: 100%;
@@ -100,6 +80,8 @@ h1.menu-title{
     margin-bottom: 20px;
 }
 
+
+/* main area header */
 #content-wrapper > #content-header{
     height: 55px;
     width: 100%;
@@ -120,6 +102,14 @@ h1.menu-title{
 .form-group > form > div > input{border-radius: 0; -moz-border-radius: 0; border-left: none;}
 .form-group > form > div > .input-group-addon{border-radius: 0; -moz-border-radius: 0; border-right: none; background: #fff;}
 
+/* main area > content */
+#content{
+    height: 85%;
+    margin: 20px;
+    border: 2px solid #ebebeb;
+}
+
+/* main area > content > menu */
 #content > #content-menu{
     width: 200px;
     height: 100%;
@@ -128,16 +118,9 @@ h1.menu-title{
     background-color: #eee;
     padding: 10px;
 }
-#content > #content-menu ul> div > li > a{
-    color: #ccc;
-}
+#content > #content-menu ul> div > li > a{color: #ccc;}
 
-#content{
-    height: 85%;
-    margin: 20px;
-    border: 2px solid #ebebeb;
-}
-
+/* users list*/
 #users{
     width: 250px;
     height: 100%;
@@ -145,7 +128,6 @@ h1.menu-title{
     border-right: 2px solid #ebebeb;
     overflow:hidden;
 }
-
 #users > form > input{
     margin: 10px;
     border: none;
@@ -153,7 +135,6 @@ h1.menu-title{
     width: 200px;
     background-color: #f8f8f8;
 }
-
 #users > #contacts{
     width: 100%;
     height: 84%;
@@ -164,19 +145,21 @@ h1.menu-title{
     overflow-x: hidden;
     color: #ccc;
 }
+#contacts > ul> h2{
+    border-bottom:2px solid #ccc;
+    margin-left: -10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 90%;
+}
 #users > #contacts > ul> li > img{
     height: 30px;
     border-radius: 15px;
     -moz-border-radius: 15px;
     float: left;
 }
-
-#users > #contacts > ul> li > p{
-    padding: 5px;
-    margin-left: 40px;
-    text-transform: capitalize;
-}
-
+#users > #contacts > ul> li > p{padding: 5px; margin-left: 40px; text-transform: capitalize;}
 #alphabet{
     position: absolute;
     left: 700px;
@@ -184,17 +167,13 @@ h1.menu-title{
     text-align: center;
     text-transform: uppercase;
 }
-
-#alphabet > ul > li > a{
-    color: #000;
-    font-size: 12px;
-}
+#alphabet > ul > li > p{padding: 0; margin: 0;}
+#alphabet > ul > li > a{color: #000; font-size: 12px;}
 #optButtons{
     float: left;
     height: 30px;
     width: 255px;
 }
-
 #optButtons > ul > li{
     width: 33%;
     float: left;
@@ -204,13 +183,3 @@ h1.menu-title{
     padding: 10px 2px;
     border-right: 2px solid #ccc;
 }
-
-#contacts > ul> h2{
-    border-bottom:2px solid #ccc;
-    margin-left: -10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-transform: uppercase;
-    width: 90%;
-}
-
