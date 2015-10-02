@@ -3,7 +3,8 @@ $(document).ready(function(){
     var users = new Array();
     $.getJSON('http://api.randomuser.me/?randomapi&results=20&orderby=asc',function(data){
         /* sidebar user data*/
-        $("#sidebar-header img").attr('src',data.results[0].user.picture);
+        $("#sidebar-header img").attr('src',data.results[0].user.picture.medium);
+        $("#sidebar-header img").attr('alt',data.results[0].user.name.first+" "+data.results[0].user.name.last);
         $("#sidebar-header p").html(data.results[0].user.name.first+" "+data.results[0].user.name.last);
 
         /* users list */
@@ -26,7 +27,7 @@ $(document).ready(function(){
                     var z = users[i][j];
                     $("#contacts ul").append(
                         $("<li></li>").append(
-                            "<img src='"+data.results[z].user.picture+"'><p>"+data.results[z].user.name.last+", "+data.results[z].user.name.first+"</p>"
+                            "<img src='"+data.results[z].user.picture.medium+"' alt='"+data.results[z].user.name.first+" "+data.results[z].user.name.last+"'><p>"+data.results[z].user.name.last+", "+data.results[z].user.name.first+"</p>"
                         ));
                 });
             }

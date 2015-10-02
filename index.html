@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<title>Sportlyzer</title>
+		<meta charset="utf-8">
         <script src="js/jquery2.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/main.js"></script>
@@ -8,13 +10,13 @@
         <!--<link rel="stylesheet" href="css/main.css">-->
         <link rel="stylesheet/less" type="text/css" href="css/style.less">
         <script src="js/less.js" type="text/javascript"></script>
-        <link rel="stylesheet/css" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
     <div id="wrapper">
         <div id="sidebar-wrapper">
             <div id="sidebar-header">
-                <img src="">
+                <img src="#" alt="active user">
                 <p></p>
             </div>
             <div id="sidebar-menu">
@@ -22,25 +24,25 @@
                     <li><span class="mark"></span><a href="#">Skiiwolves</a><span class="glyphicon glyphicon-chevron-right"></span></li>
                 </ul>
                 <ul class="nav link2">
-                    <h1 class="menu-title">Club management</h1>
+                    <li class="menu-title">Club management</li>
                     <li><span class="mark1"></span><a href="#">Dashboard<span class="glyphicon glyphicon-chevron-right"></span></a></li>
                     <li><span class="mark1"></span><a href="#">Members & groups<span class="glyphicon glyphicon-chevron-right"></span></a></li>
                     <li><span class="mark1"></span><a href="#">Finance<span class="glyphicon glyphicon-chevron-right"></span></a></li>
                     <li><span class="mark1"></span><a href="#">Messaging<span class="glyphicon glyphicon-chevron-right"></span></a></li>
                 </ul>
                 <ul class="nav link2">
-                    <h1 class="menu-title">Training management</h1>
-                    <li><span class="mark1"></span><a href="#">Dashboard<span class="glyphicon glyphicon-chevron-right"></a></span></li>
-                    <li><span class="mark1"></span><a href="#">Planning<span class="glyphicon glyphicon-chevron-right"></a></span></li>
-                    <li><span class="mark1"></span><a href="#">Statistics<span class="glyphicon glyphicon-chevron-right"></a></span></li>
-                    <li><span class="mark1"></span><a href="#">Attendance<span class="glyphicon glyphicon-chevron-right"></a></span></li>
+                    <li class="menu-title">Training management</li>
+                    <li><span class="mark1"></span><a href="#">Dashboard<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li><span class="mark1"></span><a href="#">Planning<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li><span class="mark1"></span><a href="#">Statistics<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li><span class="mark1"></span><a href="#">Attendance<span class="glyphicon glyphicon-chevron-right"></span></a></li>
                 </ul>
                 <span class="divider"></span>
                 <ul class="nav link2">
-                    <h1 class="menu-title">Athletes tools</h1>
-                    <li><span class="mark1"></span><a href="#">Diary<span class="glyphicon glyphicon-chevron-right"></a></span></li>
-                    <li><span class="mark1"></span><a href="#">Statistics<span class="glyphicon glyphicon-chevron-right"></a></span></li>
-                    <li><span class="mark1"></span><a href="#">Commnity<span class="glyphicon glyphicon-chevron-right"></a></span></li>
+                    <li class="menu-title">Athletes tools</li>
+                    <li><span class="mark1"></span><a href="#">Diary<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li><span class="mark1"></span><a href="#">Statistics<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li><span class="mark1"></span><a href="#">Commnity<span class="glyphicon glyphicon-chevron-right"></span></a></li>
                 </ul>
             </div>
             <div id="manage-modules">
@@ -70,23 +72,19 @@
                         <li><a href="#">staff</a></li>
                     </ul>
                     <ul id="groups">
-                        <div class="menu-header">
-                            <li><h2>Groups <a href="#addGroup"><span class="glyphicon glyphicon-plus"></span></a></h2></li>
-                        </div>
+						<li class="menu-header"><h2>Groups <a href="#addGroup"><span class="glyphicon glyphicon-plus"></span></a></h2></li>
                         <li><a href="#">Beginners</a></li>
                         <li><a href="#">Intermediate</a></li>
                         <li><a href="#">Aces</a></li>
                     </ul>
                     <ul id="lists">
-                        <div class="menu-header">
-                            <li><h2>Lists <a href="#addList"><span class="glyphicon glyphicon-plus"></span></a></h2></li>
-                        </div>
+                        <li class="menu-header"><h2>Lists <a href="#addList"><span class="glyphicon glyphicon-plus"></span></a></h2></li>
                         <li><a href="#">Beginners</a></li>
                         <li><a href="#">Intermediate</a></li>
                     </ul>
                 </div>
                 <div id="users">
-                    <form class="form" role="form">
+                    <form class="form">
                         <input type="text" placeholder="Search ...">
                     </form>
                     <div id="contacts">
